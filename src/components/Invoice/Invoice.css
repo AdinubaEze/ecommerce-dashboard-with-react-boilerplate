@@ -1,0 +1,53 @@
+.invoice__container{
+    padding: 20px;
+    background: var(--color-ui-03);
+    margin-top: 40px;
+    box-shadow: var(--inner-glow-shadow);
+    border-radius: var(--border-radius-2);
+}
+
+.invoice__container>.invoice__container__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+.invoice__container>.invoice__container__middle>table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice__container>.invoice__container__middle>table th,
+.invoice__container>.invoice__container__middle>table td
+{
+     font-size: 12px;
+     font-weight: 500;
+     line-height: 21px;
+     text-align: left;
+     padding: 5px 10px;
+}
+
+.invoice__container>.invoice__container__middle>table tbody tr:nth-child(odd){
+    background: var(--color-ui-01);
+}
+
+.invoice__container>.invoice__container__middle>table .status{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.invoice__container>.invoice__container__middle>table .status .dot.pending{
+    background: var(--color-warning);
+}
+
+/* Responsive */
+@media (max-width:620px){
+    .invoice__container>.invoice__container__middle>table .mobile__hide{
+        display: none;
+    }
+}
+  

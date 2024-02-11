@@ -1,0 +1,75 @@
+.revenue__container>.revenue__summery__container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.revenue__container>.revenue__summery__container .revenue__summary__card{
+    background: var(--color-ui-03);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--inner-glow-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+}
+
+
+.revenue__container>.revenue__summery__container .revenue__summary__card .column.right{
+  flex: 1;
+}
+.revenue__container>.revenue__summery__container>.revenue__summary__card .title{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.revenue__container>.revenue__summery__container>.revenue__summary__card .detail{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.revenue__container>.revenue__summery__container>.revenue__summary__card .detail > .success__rate,
+.revenue__container>.revenue__summery__container>.revenue__summary__card .detail > .danger__rate
+{
+   padding: 3px 5px;
+   border-radius: var(--border-radius-1);
+   background: var(--color-success-variant);
+   color: var(--color-green);
+   font-size: 12px;
+}
+
+.revenue__container>.revenue__summery__container>.revenue__summary__card .detail > .danger__rate{
+    background: var(--color-danger-variant);
+    color: var(--color-danger-text);
+}
+
+
+
+.revenue__container>.revenue__chart__container{
+    background: var(--color-ui-03);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--inner-glow-shadow);
+    margin-top: 40px;
+}
+
+.revenue__container>.revenue__chart__container>.title{
+  padding: 10px 20px;
+}
+
+.revenue__container>.revenue__chart__container>.chart__container{
+  padding: 20px;
+  height: 270px;
+}
+
+
+/* Responsive */
+@media (max-width:500px){
+  .revenue__container>.revenue__summery__container{
+    grid-template-columns: 100%;
+  }
+}

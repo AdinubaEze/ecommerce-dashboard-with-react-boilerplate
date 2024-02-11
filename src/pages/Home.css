@@ -1,0 +1,17 @@
+.home__container{
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width:800px){
+  .home__container{
+      display: block;
+  }
+  .right__bar__container{
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+
